@@ -2,7 +2,7 @@ const Sequelize = require('sequelize').Sequelize;
 //const {Sequelize} = require('sequelize');
 
 //database, username, password
-let sequelize = new Sequelize('games', 'root', '', {
+let sequelize = new Sequelize('games', 'root', 'root', {
     host: 'localhost',
     dialect: 'mysql'
 });

@@ -5,11 +5,15 @@ const Model = Sequelize.Model;
 
 class Game extends Model {};
 
+//CREATE TABLE games (name VARCHAR(255) NOT NULL);
 Game.init({
+    //id
     name: {
         type: DataTypes.STRING,
         allowNull: false,
     },
+    //createdAt
+    //updatedAt
 }, {
     sequelize,
     modelName: 'game',
